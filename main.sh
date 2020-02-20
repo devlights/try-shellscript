@@ -51,8 +51,8 @@ _main() {
 
         script_path="${mappings[${name}]}"
 
-        echo "[name  ] ${name}"
-        echo "[script] ${script_path}"
+        echo "[INPUT ] ${name}"
+        echo "[SCRIPT] ${script_path}"
 
         echo "===== START [${script_path}] ====="
         (
