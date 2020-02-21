@@ -1,6 +1,5 @@
 # try-shellscript
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bbd75dda1c4943c8bba55ea1bf1b5dc3)](https://www.codacy.com/manual/devlights/try-shellscript?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=devlights/try-shellscript&amp;utm_campaign=Badge_Grade)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devlights/try-shellscript) 
 
 ---
