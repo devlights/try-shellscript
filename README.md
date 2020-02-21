@@ -1,5 +1,6 @@
 # try-shellscript
 
+[![CodeFactor](https://www.codefactor.io/repository/github/devlights/try-shellscript/badge)](https://www.codefactor.io/repository/github/devlights/try-shellscript)
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devlights/try-shellscript) 
 
 ---
