@@ -5,6 +5,7 @@ declare -A mappings
 _make_mappings() {
     mappings=(
         ["helloworld"]="basic/helloworld.sh"
+        ["shellexpansion_use_default"]="basic/shellexpansion/use_default.sh"
     )
 }
 
