@@ -6,8 +6,8 @@ _make_mappings() {
     mappings=(
         ["helloworld"]="basic/helloworld.sh"
         ["shellexpansion_use_default"]="basic/shellexpansion/use_default.sh"
-        ["grep-if"]="basic/grep-if-judge/grep-if-judge.sh"
-        ["true-false"]="basic/true-false-command/true-false-command.sh"
+        ["grep-if"]="basic/grep_if_judge/grep_if_judge.sh"
+        ["true-false"]="basic/true_false_command/true_false_command.sh"
     )
 }
 
