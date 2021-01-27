@@ -63,7 +63,7 @@ _main() {
         do 
             if [[ "$key" == *"$name"* ]]; then
                 candidates=("${candidates[@]}" "$key")
-                let count++
+                (( count++ ))
             fi
         done
 
@@ -88,9 +88,11 @@ _main() {
         target="${candidates[0]}"
         script_path="${mappings[${target}]}"
 
+        echo ''
         echo "[INPUT ] ${name}"
         echo "[TARGET] ${target}"
         echo "[SCRIPT] ${script_path}"
+        echo ''
 
         echo "===== START [${script_path}] ====="
         (
