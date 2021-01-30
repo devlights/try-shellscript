@@ -8,6 +8,8 @@ _make_mappings() {
         ["shellexpansion_use_default"]="basic/shellexpansion/use_default.sh"
         ["grep-if"]="basic/grep_if_judge/grep_if_judge.sh"
         ["true-false"]="basic/true_false_command/true_false_command.sh"
+        
+        ["comment_multiline"]="basic/comment/multiline_commentout.sh"
     )
 }
 
