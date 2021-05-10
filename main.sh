@@ -3,21 +3,8 @@
 declare -A mappings
 
 _make_mappings() {
-    mappings=(
-        ["helloworld"]="basic/helloworld.sh"
-
-        ["grep-if"]="basic/grep_if_judge/grep_if_judge.sh"
-        ["true-false"]="basic/true_false_command/true_false_command.sh"
-        
-        ["comment_multiline"]="basic/comment/multiline_commentout.sh"
-
-        ["parameter_expansion_use_default"]="basic/shell_expansions/parameter_expansion/use_default.sh"
-
-        ["brace_expansion_sequence_expansion"]="basic/shell_expansions/brace_expansion/sequence_expression.sh"
-        ["brace_expansion_non_sequensial_expansion"]="basic/shell_expansions/brace_expansion/non_sequensial_expression.sh"
-        ["brace_expansion_use_wildcard"]="basic/shell_expansions/brace_expansion/use_wildcard.sh"
-        ["brace_expansion_combination"]="basic/shell_expansions/brace_expansion/combination.sh"
-    )
+    . basic/examples.sh
+    regist_basic mappings
 }
 
 # main function
@@ -31,6 +18,9 @@ _make_mappings() {
 #   - https://stackoverflow.com/questions/229551/how-to-check-if-a-string-contains-a-substring-in-bash
 #   - https://qiita.com/b4b4r07/items/cb02bbfd6df58df06ea8
 #   - https://www.atmarkit.co.jp/ait/articles/1905/30/news017.html
+#   - https://qiita.com/pu_ri/items/f1a2e098fb8ae8e978d4
+#   - https://orebibou.com/ja/home/201411/20141117_001/
+#   - https://tldp.org/LDP/abs/html/localvar.html
 _main() {
     onetime=false
     while getopts o option
