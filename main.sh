@@ -5,7 +5,7 @@ declare -A mappings
 _make_mappings() {
     mappings=(
         ["helloworld"]="basic/helloworld.sh"
-        ["shellexpansion_use_default"]="basic/shellexpansion/use_default.sh"
+        ["shell_expansion_use_default"]="basic/shell_expansion/use_default.sh"
         ["grep-if"]="basic/grep_if_judge/grep_if_judge.sh"
         ["true-false"]="basic/true_false_command/true_false_command.sh"
         
