@@ -5,11 +5,18 @@ declare -A mappings
 _make_mappings() {
     mappings=(
         ["helloworld"]="basic/helloworld.sh"
-        ["shellexpansion_use_default"]="basic/shellexpansion/use_default.sh"
+
         ["grep-if"]="basic/grep_if_judge/grep_if_judge.sh"
         ["true-false"]="basic/true_false_command/true_false_command.sh"
         
         ["comment_multiline"]="basic/comment/multiline_commentout.sh"
+
+        ["parameter_expansion_use_default"]="basic/shell_expansions/parameter_expansion/use_default.sh"
+
+        ["brace_expansion_sequence_expansion"]="basic/shell_expansions/brace_expansion/sequence_expression.sh"
+        ["brace_expansion_non_sequensial_expansion"]="basic/shell_expansions/brace_expansion/non_sequensial_expression.sh"
+        ["brace_expansion_use_wildcard"]="basic/shell_expansions/brace_expansion/use_wildcard.sh"
+        ["brace_expansion_combination"]="basic/shell_expansions/brace_expansion/combination.sh"
     )
 }
 

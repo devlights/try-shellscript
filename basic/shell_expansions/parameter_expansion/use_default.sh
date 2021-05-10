@@ -7,6 +7,7 @@
 #   - ${parameter:=xxx}
 #
 # REFERENCES:
+#   - https://www.gnu.org/software/bash/manual/html_node/Shell-Parameter-Expansion.html
 #   - https://qiita.com/t_nakayama0714/items/80b4c94de43643f4be51
 _exec() {
     i=100
