@@ -2,7 +2,10 @@
 
 regist_basic_shellexpansions_braceexpansion() {
     declare -n m=$1
-    local c="$(pwd)/basic/shell_expansions/brace_expansion"
+    export m
+
+    local c
+    c="$(pwd)/basic/shell_expansions/brace_expansion"
 
     m["brace_expansion_sequence_expansion"]="${c}/sequence_expression.sh"
     m["brace_expansion_non_sequensial_expansion"]="${c}/non_sequensial_expression.sh"
