@@ -10,14 +10,12 @@ _exec() {
     #
     # 補足) シェルスクリプトにおいて 0 は 真 として扱われる
     #       逆に 1 は 偽 として扱われる
-    echo 'hoge' | grep 'hehe' > /dev/null 2>&1
-    if [ $? -eq 1 ]
+    if ! echo 'hoge' | grep 'hehe' > /dev/null 2>&1
     then
         echo "[No HIT] echo 'hoge' | grep 'hehe'"
     fi
 
-    echo 'hoge' | grep 'hoge' > /dev/null 2>&1
-    if [ "$?" -eq 0 ]
+    if echo 'hoge' | grep 'hoge' > /dev/null 2>&1
     then
         echo "[HIT   ] echo 'hoge' | grep 'hoge'"
     fi
