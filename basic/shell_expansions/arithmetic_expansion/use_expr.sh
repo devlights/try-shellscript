@@ -24,10 +24,12 @@ _exec() {
 
     ## expr を用いて計算
     #
+    # shellcheck disable=SC2003
     i=$(expr 1 + 1)
     printf "i = %d\n" "${i}"
 
     # 乗算する場合のみ注意が必要. * はそのままでは展開されるのでエスケープする.
+    # shellcheck disable=SC2086,SC2003
     i2=$(expr $i \* $i)
     printf "i2 = %d\n" "${i2}"
 }
