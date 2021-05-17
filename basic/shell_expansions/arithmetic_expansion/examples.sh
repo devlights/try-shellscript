@@ -9,4 +9,5 @@ regist_basic_shellexpansions_arithmeticexpansion() {
 
     m["arithmetic_expansion_expr"]="${c}/use_expr.sh"
     m["arithmetic_expansion_let"]="${c}/use_let.sh"
+    m["arithmetic_expansion_declare"]="${c}/use_declare.sh"
 }
