@@ -8,4 +8,5 @@ regist_basic_shellexpansions_arithmeticexpansion() {
     c="$(pwd)/basic/shell_expansions/arithmetic_expansion"
 
     m["arithmetic_expansion_expr"]="${c}/use_expr.sh"
+    m["arithmetic_expansion_let"]="${c}/use_let.sh"
 }
