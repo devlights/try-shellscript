@@ -3,6 +3,7 @@
 declare -A mappings
 
 _make_mappings() {
+    # shellcheck source=/dev/null
     . basic/examples.sh
     regist_basic mappings
 }
