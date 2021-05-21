@@ -14,6 +14,10 @@ regist_basic() {
     regist_basic_helloworld "$1"
 
     # shellcheck source=/dev/null
+    . "${curdir}/heredoc/${regsh}"
+    regist_basic_heredoc "$1"
+
+    # shellcheck source=/dev/null
     . "${curdir}/grep_if_judge/${regsh}"
     regist_basic_grepifjudge "$1"
 
