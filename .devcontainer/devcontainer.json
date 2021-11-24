@@ -1,33 +1,42 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.203.0/containers/bash
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.203.0/containers/go
 {
-	"name": "Bash (Community)",
-	"runArgs": ["--init"],
+	"name": "Go",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Debian / Ubuntu OS version: debian-11, debian-10, debian-9, ubuntu-21.04, ubuntu-20.04, ubuntu-18.04
-		// Use Debian 11, Debian 9, Ubuntu 18.04 or Ubuntu 21.04 on local arm64/Apple Silicon
-		"args": { "VARIANT": "debian-11" }
+		"args": {
+			// Update the VARIANT arg to pick a version of Go: 1, 1.16, 1.17
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use -bullseye variants on local arm64/Apple Silicon.
+			"VARIANT": "1-bullseye",
+			// Options
+			"NODE_VERSION": "none"
+		}
 	},
+	"runArgs": [ "--init", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": {
-		"terminal.integrated.defaultProfile.linux": "bash"
+		"go.toolsManagement.checkForUpdates": "local",
+		"go.useLanguageServer": true,
+		"go.gopath": "/go",
+		"go.goroot": "/usr/local/go"
 	},
-	
+
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		"golang.Go",
 		"mads-hartmann.bash-ide-vscode",
 		"rogalmic.bash-debug"
 	],
-	
+
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [],
-	
+	// "forwardPorts": [],
+
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
-	
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+	// "postCreateCommand": "go version",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode",
 	"features": {
 		"docker-from-docker": "20.10"
